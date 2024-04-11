@@ -1,58 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Caos News</a>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-    <div id="carouselExampleCaptions" class="carousel slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="imagen/" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>PDI confirma que cadáver hallado en Ñuñoa es de una mujer y estaba "esqueletizado"</h5>
-        <p>Some representative placeholder content for the first slide.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="imagen/eclipse.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>[EN VIVO] Sigue acá la transmisión del eclipse total de sol</h5>
-        <p>Some representative placeholder content for the second slide.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="imagen/billetes.jpg" class="" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Comisión de la Cámara aprueba levantamiento de secreto bancario en investigaciones tributarias</h5>
-        <p>Some representative placeholder content for the third slide.</p>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noticias Caos News</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="imagen/News Logo.png" alt="" height="100">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="noticias.html">Noticias</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="opinion.html">Opinión</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<br><br>
+<h2>Noticias Destacadas</h2>
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imagen/ñuñoa.jpg" class="d-block w-100" alt="">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Hallazgo de cuerpo en Ñuñoa: </h5>
+          <p>PDI realiza pericias en una casa de la comuna y traslada a dos monjas a declarar</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="imagen/eclipse.webp" class="d-block w-100" alt="">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Espectáculo cósmico:</h5>
+          <p>eclipse durará más de 4 minutos</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="imagen/billetes.webp" class="d-block w-100" alt="">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Bono Invierno Chile 2024: ¿Cuándo se comienza a pagar este beneficio?</h5>
+          <p>Los beneficiarios recibirán el dinero de forma automática en sus cuentas una vez que se comience a entregar.</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Siguiente</span>
+    </a>
+  </div>
+  <div class="container">
+    <br><br>
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="inputPeriodista">Buscar por Nombre del Periodista</label>
+          <input type="text" class="form-control" id="inputPeriodista" placeholder="Nombre del Periodista">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputCategoria">Buscar por Categoría de Noticias</label>
+          <select id="inputCategoria" class="form-control">
+            <option selected>Seleccionar Categoría...</option>
+            <option>Política</option>
+            <option>Deportes</option>
+            <option>Cultura</option>
+            <option>Tecnología</option>
+          </select>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputPalabraClave">Buscar por Palabra Clave</label>
+          <input type="text" class="form-control" id="inputPalabraClave" placeholder="Palabra Clave">
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Buscar</button>
+    </form>
+  </div>
+  <br>
+  <div class="container">
+    <div class="alert alert-primary" role="alert">
+      <strong>Noticias Ingresadas por usuario:</strong> 0 
+    </div>
+  </div>
+   
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
