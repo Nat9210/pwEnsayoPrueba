@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+.navbar-brand {
+    /* Que la imagen este más a la izquierda */
+    margin-right: 10px;}
+=======
 /*estilo pagina contacto*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
@@ -109,3 +114,4 @@
     font-size: 14.5px;
     margin: -15px 0 15px;
 }
+>>>>>>> 1c590f921d8d594cdcff63517a09011b756488ac
